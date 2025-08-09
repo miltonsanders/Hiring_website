@@ -1,0 +1,185 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  --color-indigo-600: #4f46e5;
+  --color-indigo-700: #4338ca;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-red-600: #dc2626;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.non-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  -webkit-scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.non-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Chrome, Safari, and Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.stdropdown-container {
+  border-radius: 12px;
+  border-color: #0004 !important;
+  padding: 4px;
+}
+
+.stdropdown-item {
+  color: #000c;
+}
+
+.stdropdown-input.stsearch-box {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.stdropdown-item {
+  padding: 8px !important;
+}
+
+.stsearch-box input {
+  border: none !important;
+  outline: none;
+}
+
+.stsearch-box,
+.stdropdown-input {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.experience-slider {
+  border-radius: 12px;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  background: #2400c2;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.experience-slider:hover {
+  opacity: 1;
+}
+
+.experience-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  background: #2400c2;
+  cursor: pointer;
+}
+
+.experience-slider::-moz-range-thumb {
+  width: 32px;
+  height: 32px;
+  background: #2400c2;
+  cursor: pointer;
+}
+
+.tox-statusbar__branding,
+.tox-statusbar__path {
+  display: none !important;
+}
+
+.tox .tox-editor-header {
+  z-index: 0 !important;
+}
+
+.tox.tox-tinymce {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.tox .tox-statusbar {
+  background-color: transparent !important;
+}
